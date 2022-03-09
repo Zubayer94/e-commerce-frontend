@@ -12,7 +12,16 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/bootstrap.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/fonts/fontawesome/css/all.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/ui.css' },
+      { rel: 'stylesheet', href: '/css/responsive.css', media: 'only screen and (max-width: 1200px)' },
+    ],
+    script: [
+      { src:'/js/jquery-2.0.0.min.js', type: 'text/javascript'},
+      { src:'/js/bootstrap.bundle.min.js', type: 'text/javascript' },
+      { src:'/js/script.js', type: 'text/javascript' },
     ]
   },
 
