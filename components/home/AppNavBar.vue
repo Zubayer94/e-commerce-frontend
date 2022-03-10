@@ -7,8 +7,8 @@
       </button>
 
       <div class="collapse navbar-collapse" id="main_nav">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
+        <ul class="navbar-nav mx-auto ">
+          <li class="nav-item">
             <a class="nav-link" href="#">Buy</a>
           </li>
           <li class="nav-item">
