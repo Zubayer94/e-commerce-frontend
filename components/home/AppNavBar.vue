@@ -17,7 +17,7 @@
 
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <SwapLogo :height="20" :width="20" :color="red" />
+              <SwapLogo :height="20" :width="20" />
               &nbsp; <span class="h5" style="background: -webkit-linear-gradient(right, #E87C28, #3858a5); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Swap</span>
             </a>
           </li>

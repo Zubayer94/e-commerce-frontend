@@ -20,7 +20,7 @@
 <script>
 export default {
   name: 'SwapLogo',
-  props: ['height', 'width', 'color']
+  props: ['height', 'width']
 }
 </script>
 
