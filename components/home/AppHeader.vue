@@ -30,10 +30,85 @@
           </div> <!-- col.// -->
           <div class="col-lg-4 col-sm-6 col-8">
             <div class="widgets-wrap float-md-right">
-              <div class="widget-header  mr-3">
-                <a href="#" @click="openModal" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+
+              <div class="widget-header  mr-3 dropdown" >
+                <a href="#" @mouseenter="handleCartDropdown" class="icon icon-sm rounded-circle border caret-off dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
                 <span class="badge badge-pill badge-danger notify">0</span>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <!-- <p>No products</p> -->
+
+                  <!-- <div class="modal-content"> -->
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Your Shopping Cart
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body cartModal-body">
+                      <table class="table table-responsive cart-table">
+                        <!-- <thead>
+                          <tr>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead> -->
+                        <tbody>
+                          <tr>
+                            <td class="col-sm-1 col-md-1 col-1 text-center">
+                              <button class="increase btn btn-sm">
+                                  <i class="fa-solid fa-square-plus text-warning"></i>
+                              </button>
+                              <p class="cart-quantity-text m-0">1</p>
+                              <button class="decrease btn btn-sm">
+                                  <i class="fa-solid fa-square-minus text-warning"></i>
+                              </button>
+                            </td>
+                            <td class="col-sm-8 col-md-7 col-7 w-25">
+                              <div class="cart-product-image" >
+                                <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png" class="img-fluid img-thumbnail" alt="Sheep" width="60px" >
+                              </div>
+                              <div class="cart-product-body" >
+                                <p class="product-name">
+                                    <a href="#">iPhone 12 Pro Max 256GB Pacific Blue (Certified Pre-owned)</a>
+                                </p>
+                                <p class="product-price">
+                                    <TakaLogo :height="15" :width="15" /><a href="#">
+                                        <span style="text-decoration: line-through; color: rgb(36, 36, 36) !important;">155000</span> <!---->
+                                        <span>94999</span> / Piece
+                                    </a>
+                                </p>
+                              </div>
+                            </td>
+                            <td class="col-sm-1 col-md-3 col-3 text-center w-75">
+                              <TakaLogo :height="15" :width="15" />89
+                            </td>
+                            <td class="col-sm-1 col-md-3 col-3 text-center">
+                              <button class="btn btn-sm">
+                                <i class="fa fa-trash-o text-dark"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="d-flex justify-content-end">
+                        <h5>Total: <span class="cart-price text-success">৳ 89</span></h5>
+                      </div>
+                    </div>
+                    <div class="modal-footer cart-modal-footer border-top-0 d-flex justify-content-between">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Checkout</button>
+                    </div>
+                  <!-- </div> -->
+                </div>
               </div>
+
               <div class="widget-header icontext">
                 <a href="#" class="icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
                 <div class="text">
@@ -44,67 +119,11 @@
                   </div>
                 </div>
               </div>
-
             </div> <!-- widgets-wrap.// -->
           </div> <!-- col.// -->
         </div> <!-- row.// -->
       </div> <!-- container.// -->
     </section> <!-- header-main .// -->
-
-    <!-- Modal -->
-    <!-- <div class="modal fade cartModal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
-      <div class="modal-dialog modal-dialog-centered cartModal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header border-bottom-0">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Your Shopping Cart
-            </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body cartModal-body">
-            <table class="table cart-table">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Product</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Qty</th>
-                  <th scope="col">Total</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="w-25">
-                    <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png"
-                      class="img-fluid img-thumbnail" alt="Sheep">
-                  </td>
-                  <td>Vans Sk8-Hi MTE Shoes</td>
-                  <td>89$</td>
-                  <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
-                  <td>178$</td>
-                  <td>
-                    <a href="#" class="btn btn-danger btn-sm">
-                      <i class="fa fa-times"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="d-flex justify-content-end">
-              <h5>Total: <span class="cart-price text-success">89$</span></h5>
-            </div>
-          </div>
-          <div class="modal-footer cart-modal-footer border-top-0 d-flex justify-content-between">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-success">Checkout</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- modal -->
 
     <div class="modal fade supportModal" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
       <div class="modal-dialog supportModal-dialog" role="document">
@@ -118,7 +137,7 @@
             </button>
           </div>
           <div class="modal-body cartModal-body">
-            <table class="table cart-table">
+            <table class="table table-responsive cart-table">
               <thead>
                 <tr>
                   <th scope="col"></th>
@@ -163,10 +182,14 @@
 </template>
 
 <script>
+import TakaLogo from '../custom/TakaLogo.vue';
 export default {
+  components: { TakaLogo },
   methods: {
-    openModal() {
-    $('#supportModal').modal('show');
+    handleCartDropdown() {
+      console.log('hovered');
+    // $('#supportModal').modal('show');
+      $('.dropdown-toggle').dropdown('toggle')
     }
   },
 }
@@ -185,53 +208,16 @@ export default {
     text-align: center;
   }
 
-  .cart-table .qty {
-    max-width: 2rem;
-  }
-
   .cart-price {
     margin-left: 1rem;
   }
 
-  .cart-modal-footer {
-    padding-top: 0rem;
+  /* remove dropdown arrow logo */
+  .caret-off::before {
+    display: none;
   }
-
-  /*******************************
-  * MODAL AS RIGHT SIDEBAR
-  *******************************/
-  /* .cartModal .cartModal-dialog {
-    position:fixed;
-    bottom: 50px;
-    right: 30px;
-    width: 70%;
-    margin:0;
+  .caret-off::after {
+      display: none;
   }
-  .cartModal-dialog{
-    overflow-y: initial !important
-  }
-  .cartModal-body{
-      max-height: calc(50vh - 100px);
-      overflow-y: auto;
-  } */
-
-  .supportModal .supportModal-dialog {
-    position: fixed;
-    top: 15%;
-    right: 0px;
-    width: 70%;
-    margin: 0;
-  }
-  .supportModal-dialog{
-    overflow-y: initial !important
-  }
-  .supportModal-body{
-      max-height: calc(50vh - 100px);
-      overflow-y: auto;
-  }
-  /*******************************
-  * MODAL AS RIGHT SIDEBAR Ends
-  *******************************/
-
 </style>
 

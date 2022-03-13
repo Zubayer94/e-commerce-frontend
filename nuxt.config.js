@@ -14,7 +14,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/bootstrap.css' },
-      { rel: 'stylesheet', type: 'text/css', href: '/fonts/fontawesome/css/all.min.css' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/ui.css' },
       { rel: 'stylesheet', href: '/css/responsive.css', media: 'only screen and (max-width: 1200px)' },
     ],
@@ -22,6 +21,7 @@ export default {
       { src:'/js/jquery-2.0.0.min.js', type: 'text/javascript'},
       { src:'/js/bootstrap.bundle.min.js', type: 'text/javascript' },
       { src:'/js/script.js', type: 'text/javascript' },
+      { src: 'https://kit.fontawesome.com/49bc342b2c.js', crossorigin: 'anonymous', type: 'text/javascript' },
     ]
   },
 
