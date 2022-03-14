@@ -1,5 +1,5 @@
 <template>
-  <section class="section-main bg padding-y">
+  <section class="section-main bg padding-y pb-1">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
