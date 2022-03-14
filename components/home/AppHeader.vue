@@ -1,6 +1,6 @@
 <template>
   <header class="section-header">
-    <section class="header-main border-bottom">
+    <section class="header-main border-bottom custom-header">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-2 col-4">

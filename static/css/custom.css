@@ -1,0 +1,10 @@
+/* keep header in fixed position on top */
+.custom-header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #f8f9fa;
+}

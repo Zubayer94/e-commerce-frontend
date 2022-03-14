@@ -17,6 +17,7 @@ export default {
       // { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css', integrity: 'sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn',crossorigin:'anonymous' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/ui.css' },
       { rel: 'stylesheet', href: '/css/responsive.css', media: 'only screen and (max-width: 1200px)' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/custom.css' },
     ],
     script: [
       // { src: '/js/jquery-2.0.0.min.js', type: 'text/javascript' },
