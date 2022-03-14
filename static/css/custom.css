@@ -8,3 +8,24 @@
     width: 100%;
     background: #f8f9fa;
 }
+
+/* fix navbar position according to top header */
+.custom-top-nav {
+  margin-top: 76px;
+}
+@media screen and (max-width: 993px) {
+  .custom-top-nav {
+    margin-top: 183px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .custom-top-nav {
+    margin-top: 195px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .custom-top-nav {
+    margin-top: 244px;
+  }
+}
+/* fix navbar position according to top header */
