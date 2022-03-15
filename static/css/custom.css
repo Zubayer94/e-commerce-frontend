@@ -28,4 +28,11 @@
     margin-top: 244px;
   }
 }
-/* fix navbar position according to top header */
+
+/* fix z-index of new product badge and product rating */
+.card-product-grid .topbar {
+  z-index: unset;
+}
+.rating-stars li.stars-active, .rating-stars li {
+  z-index: unset;
+}
