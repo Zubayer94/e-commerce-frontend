@@ -36,3 +36,13 @@
 .rating-stars li.stars-active, .rating-stars li {
   z-index: unset;
 }
+
+.slick-prev:before, .slick-next:before {
+    color: #797c85;
+}
+.slick-prev{
+  left: -18px;
+}
+.slick-next {
+    right: -18px;
+}

@@ -15,6 +15,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/bootstrap.css' },
       // { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css', integrity: 'sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn',crossorigin:'anonymous' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css', crossorigin:'anonymous' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', crossorigin:'anonymous' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/ui.css' },
       { rel: 'stylesheet', href: '/css/responsive.css', media: 'only screen and (max-width: 1200px)' },
       { rel: 'stylesheet', type: 'text/css', href: '/css/custom.css' },
@@ -26,6 +28,7 @@ export default {
       { src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js', type: 'text/javascript', integrity: 'sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF', crossorigin: 'anonymous'},
       { src:'/js/script.js', type: 'text/javascript' },
       { src: 'https://kit.fontawesome.com/49bc342b2c.js', crossorigin: 'anonymous', type: 'text/javascript' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', crossorigin: 'anonymous', type: 'text/javascript' },
     ]
   },
 
