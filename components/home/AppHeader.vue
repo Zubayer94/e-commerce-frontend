@@ -52,7 +52,7 @@
                     <div class="modal-body p-2 cartModal-body">
                       <table class="cart-table">
                         <tbody>
-                          <tr class="p-0 mb-2">
+                          <tr v-for="n in 5" :key="n" class="p-0 mb-2">
                             <td class="col-sm-1 col-md-1 col-1 px-1 text-center">
                               <button class="increase btn btn-sm">
                                   <i class="fa-solid fa-square-plus text-warning"></i>
@@ -70,44 +70,7 @@
 
                                 <div class="col-8 p-1 cart-product-body w-70" >
                                   <p class="product-name m-0">
-                                      <a href="#">iPhone 12 Pro Max 256GB Pacific Blue</a>
-                                  </p>
-                                  <p class="product-price">
-                                      <TakaLogo :height="15" :width="15" /><a href="#">
-                                          <span style="text-decoration: line-through; color: rgb(36, 36, 36) !important;">155000</span> <span class="text-success"> <b>৳ 94999</b></span> / Piece
-                                      </a>
-                                  </p>
-                                </div>
-                              </div>
-                            </td>
-                            <td class="col-sm-1 col-md-3 col-3 px-1 text-center">
-                              <TakaLogo :height="15" :width="15" />890000
-                            </td>
-                            <td class="col-sm-1 col-md-3 col-3 px-1 text-center del-cart-button">
-                              <button class="btn btn-sm">
-                                <i class="fa fa-trash-o text-danger"></i>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr class="p-0 mb-2">
-                            <td class="col-sm-1 col-md-1 col-1 px-1 text-center">
-                              <button class="increase btn btn-sm">
-                                  <i class="fa-solid fa-square-plus text-warning"></i>
-                              </button>
-                              <p class="cart-quantity-text m-0">1</p>
-                              <button class="decrease btn btn-sm">
-                                  <i class="fa-solid fa-square-minus text-warning"></i>
-                              </button>
-                            </td>
-                            <td class="col-sm-8 col-md-7 col-7 px-1 mb-2">
-                              <div class="row">
-                                <div class="col-4 p-1 cart-product-image w-30" >
-                                  <img src="https://d2yz2hr6q3159h.cloudfront.net/marketplace/products/b8a03c5c15fcfa8dae0b03351eb1742f/pre-owned-iphone-12-pro-max-256gb-pacific-blue-4850.png" class="img-fluid mt-1" alt="Sheep" width="60px">
-                                </div>
-
-                                <div class="col-8 p-1 cart-product-body w-70" >
-                                  <p class="product-name m-0">
-                                      <a href="#">iPhone 12 Pro Max 256GB Pacific Blue</a>
+                                      <a href="#">iPhone 12 Pro Max 256GB Pacific Blue{{n}}</a>
                                   </p>
                                   <p class="product-price">
                                       <TakaLogo :height="15" :width="15" /><a href="#">
@@ -128,12 +91,13 @@
                           </tr>
                         </tbody>
                       </table>
-                      <div class="d-flex justify-content-end">
+                      <!-- <div class="d-flex justify-content-end">
                         <h5>Total: <span class="cart-price text-success">৳ 89</span></h5>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="modal-footer cart-modal-footer border-top-0 d-flex justify-content-between">
-                      <button type="button" class="btn btn-secondary" @click="closeDropdown">Close</button>
+                      <h5>Total: <span class="cart-price text-success">৳ 89</span></h5>
+                      <!-- <button type="button" class="btn btn-secondary" @click="closeDropdown">Close</button> -->
                       <button type="button" class="btn btn-success">Checkout</button>
                     </div>
                   <!-- </div> -->
