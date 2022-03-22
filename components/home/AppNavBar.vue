@@ -7,40 +7,91 @@
       </button>
 
       <div class="collapse navbar-collapse" id="main_nav">
-        <ul class="navbar-nav mx-auto list-inline">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+        <ul class="navbar-nav mx-auto list-inline menu-category header-nav">
+          <li class="nav-item has-submenu m-1">
+            <a class="nav-link d-inline caret-off" href="#">
               <BuyLogo :height="25" :width="25" />
               &nbsp; <span class="h5" style="color: #3858a5" >Buy</span>
             </a>
+            <ul class="submenu custom-submenu" >
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/phone.png">
+                  SmartPhone
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/laptop.png">
+                  Laptop
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/motorcycle.png">
+                  Bike
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/vehicles.png">
+                  Car
+                </a>
+              </li>
+            </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="nav-item m-1">
+            <a class="nav-link d-inline caret-off" href="#">
               <SwapLogo :height="20" :width="20" />
               &nbsp; <span class="h5" style="background: -webkit-linear-gradient(right, #E87C28, #3858a5); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Swap</span>
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li class="nav-item has-submenu m-1">
+            <a class="nav-link d-inline caret-off" href="#">
               <SellLogo :height="25" :width="25"/>
               &nbsp; <span class="h5" style="color: #E87C28">Sell</span>
             </a>
+            <ul class="submenu" >
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/phone.png">
+                  SmartPhone
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/laptop.png">
+                  Laptop
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/motorcycle.png">
+                  Bike
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img width="20" src="~/assets/images/logo/vehicles.png">
+                  Car
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle caret-off" data-toggle="dropdown" href="#">
-              <MoreLogo :height="25" :width="25"/>
+
+          <li class="nav-item m-1 has-submenu">
+            <a class="nav-link caret-off d-inline" href="https://getbootstrap.com/">
+              <MoreLogo :height="20" :width="20"/>
               &nbsp; <span class="h5" style="color: #3858a5">More</span>
             </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Foods and Drink</a>
-              <a class="dropdown-item" href="#">Home interior</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Category 1</a>
-              <a class="dropdown-item" href="#">Category 2</a>
-              <a class="dropdown-item" href="#">Category 3</a>
-            </div>
+            <ul class="submenu" >
+              <li><a href="#">Submenu name</a></li>
+              <li><a href="#">Great submenu</a></li>
+              <li><a href="#">Another menu</a></li>
+              <li><a href="#">Some others</a></li>
+            </ul>
           </li>
         </ul>
       </div> <!-- collapse .// -->
@@ -60,5 +111,19 @@ export default {
 </script>
 
 <style>
+  /* remove bottom border  */
+  .header-nav li {
+    border-bottom: unset
+  }
 
+  /* show header submenu on bottom */
+  .header-nav ul {
+    left: unset !important;
+    top: 120% !important;
+  }
+
+  /* change color ob header submenu hover */
+  .header-nav > .has-submenu > .submenu a:hover{
+    background: #eda224 !important;
+  }
 </style>
