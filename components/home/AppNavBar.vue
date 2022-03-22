@@ -28,21 +28,6 @@
               &nbsp; <span class="h5" style="color: #E87C28">Sell</span>
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Partnership</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Baby &amp Toys</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fitness sport</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clothing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Furnitures</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> More</a>
             <div class="dropdown-menu">
@@ -53,7 +38,7 @@
               <a class="dropdown-item" href="#">Category 2</a>
               <a class="dropdown-item" href="#">Category 3</a>
             </div>
-          </li> -->
+          </li>
         </ul>
       </div> <!-- collapse .// -->
     </div> <!-- container .// -->
