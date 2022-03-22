@@ -29,7 +29,10 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> More</a>
+            <a class="nav-link dropdown-toggle caret-off" data-toggle="dropdown" href="#">
+              <MoreLogo :height="25" :width="25"/>
+              <span class="h5" style="color: #3858a5">More</span>
+            </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Foods and Drink</a>
               <a class="dropdown-item" href="#">Home interior</a>
@@ -49,8 +52,9 @@
 import SellLogo from '~/components/custom/SellLogo.vue'
 import SwapLogo from '~/components/custom/SwapLogo.vue'
 import BuyLogo from '~/components/custom/BuyLogo.vue'
+import MoreLogo from '../custom/MoreLogo.vue'
 export default {
-  components: { SwapLogo, SellLogo, BuyLogo },
+  components: { SwapLogo, SellLogo, BuyLogo, MoreLogo },
 
 }
 </script>

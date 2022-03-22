@@ -227,12 +227,5 @@ export default {
       width: 320px !important;
     }
   }
-  /* remove dropdown arrow logo */
-  .caret-off::before {
-    display: none;
-  }
-  .caret-off::after {
-      display: none;
-  }
 </style>
 
