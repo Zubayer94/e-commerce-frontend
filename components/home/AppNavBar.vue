@@ -31,7 +31,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle caret-off" data-toggle="dropdown" href="#">
               <MoreLogo :height="25" :width="25"/>
-              <span class="h5" style="color: #3858a5">More</span>
+              &nbsp; <span class="h5" style="color: #3858a5">More</span>
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Foods and Drink</a>

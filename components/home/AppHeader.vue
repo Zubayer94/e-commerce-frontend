@@ -209,6 +209,11 @@ export default {
     margin-left: 1rem;
   }
 
+  .cartModal-body {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
   .cart-product-body p{
     font-size: 12px;
     font-weight: 500;
