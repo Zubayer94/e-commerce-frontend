@@ -82,9 +82,9 @@
           </li>
 
           <li class="nav-item m-1 has-submenu">
-            <a class="nav-link caret-off d-inline" href="https://getbootstrap.com/">
+            <a class="nav-link caret-off d-inline" href="#">
               <MoreLogo :height="20" :width="20"/>
-              &nbsp; <span class="h5" style="color: #3858a5">More</span>
+              &nbsp; <span class="h5" style="color: #1779b5">More</span>
             </a>
             <ul class="submenu" >
               <li><a href="#">Submenu name</a></li>
