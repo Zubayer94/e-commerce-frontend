@@ -13,7 +13,7 @@
               <BuyLogo :height="25" :width="25" />
               &nbsp; <span class="h5" style="color: #3858a5" >Buy</span>
             </a>
-            <ul class="submenu custom-submenu" >
+            <ul class="submenu" >
               <li>
                 <a class="dropdown-item" href="#">
                   <img width="20" src="~/assets/images/logo/phone.png">
