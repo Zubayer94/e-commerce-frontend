@@ -7,7 +7,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="main_nav">
-        <ul class="navbar-nav mx-auto list-inline menu-category header-nav">
+        <ul class="navbar-nav mx-auto list-inline menu-category buy-header-nav">
           <li class="nav-item m-1">
             <a class="nav-link d-inline caret-off" href="#">
               <img width="22" src="~/assets/images/logo/phone.png">
@@ -65,18 +65,22 @@ export default {
 
 <style>
   /* remove bottom border  */
-  .header-nav li {
+  .buy-header-nav li {
     border-bottom: unset
   }
 
   /* show header submenu on bottom */
-  .header-nav ul {
+  .buy-header-nav ul {
     left: unset !important;
     top: 120% !important;
   }
 
   /* change color ob header submenu hover */
-  .header-nav > .has-submenu > .submenu a:hover{
+  .buy-header-nav > .has-submenu > .submenu a:hover{
     background: #eda224 !important;
+  }
+
+  .buy-header-nav > .nav-item  a:hover   span{
+    color: #eda224 !important;
   }
 </style>

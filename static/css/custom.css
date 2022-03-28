@@ -11,7 +11,7 @@
 
 /* fix navbar position according to top header */
 .custom-top-nav {
-  margin-top: 76px;
+  margin-top: 78px;
 }
 @media screen and (max-width: 993px) {
   .custom-top-nav {
