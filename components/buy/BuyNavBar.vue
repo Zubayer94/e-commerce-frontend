@@ -33,7 +33,6 @@
             </a>
           </li>
 
-
           <li class="nav-item m-1 has-submenu">
             <a class="nav-link caret-off d-inline" href="#">
               <MoreLogo :height="20" :width="20"/>
@@ -82,5 +81,6 @@ export default {
 
   .buy-header-nav > .nav-item  a:hover   span{
     color: #eda224 !important;
+    transition: all 0.20s ease-out;
   }
 </style>
