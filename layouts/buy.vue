@@ -2,7 +2,6 @@
   <div>
     <AppHeader />
     <BuyNavBar />
-    <BuySlider />
     
     <nuxt/>
 
