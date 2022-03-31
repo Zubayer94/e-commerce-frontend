@@ -20,6 +20,54 @@
                 <header class="card-header">
                   <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
                     <i class="icon-control fa fa-chevron-down"></i>
+                    <h6 class="title">Ctegory</h6>
+                  </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_1" style="">
+                  <div class="card-body">
+                    <ul class="list-menu">
+                      <li>
+                        <!-- child category -->
+                        <a href="#" data-toggle="collapse" data-target="#collapse_child_1" aria-expanded="true" class="">
+                          <i class="icon-control fa fa-chevron-down"></i>
+                          Product type
+                        </a>
+                        <div class="filter-content collapse show ml-2" id="collapse_child_1" style="">
+                          <ul class="list-menu">
+                            <li>
+                              <!-- grand child category -->
+
+                              <!-- <a href="#" class="">
+                                Product type
+                              </a> -->
+                              <a href="#" data-toggle="collapse" data-target="#collapse_child_child_1" aria-expanded="true" class="">
+                                  <i class="icon-control fa fa-chevron-down"></i>
+                                  Product type
+                              </a>
+                              <div class="filter-content collapse show ml-2" id="collapse_child_child_1" style="">
+                                <ul class="list-menu">
+                                  <li>
+                                    <a href="#" class="">
+                                      Product type
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- grand child category -->
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- child category -->
+                      </li>
+                    </ul>
+                  </div> <!-- card-body.// -->
+                </div>
+              </article> <!-- filter-group  .// -->
+
+              <article class="filter-group">
+                <header class="card-header">
+                  <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
+                    <i class="icon-control fa fa-chevron-down"></i>
                     <h6 class="title">Product type</h6>
                   </a>
                 </header>
@@ -43,10 +91,10 @@
                       <li><a href="#">Animals</a></li>
                       <li><a href="#">People </a></li>
                     </ul>
-
                   </div> <!-- card-body.// -->
                 </div>
               </article> <!-- filter-group  .// -->
+
               <article class="filter-group">
                 <header class="card-header">
                   <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
@@ -89,6 +137,7 @@
                   </div> <!-- card-body.// -->
                 </div>
               </article> <!-- filter-group .// -->
+
               <article class="filter-group">
                 <header class="card-header">
                   <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
@@ -113,6 +162,7 @@
                   </div><!-- card-body.// -->
                 </div>
               </article> <!-- filter-group .// -->
+
               <article class="filter-group">
                 <header class="card-header">
                   <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
@@ -144,6 +194,7 @@
                   </div><!-- card-body.// -->
                 </div>
               </article> <!-- filter-group .// -->
+
               <article class="filter-group">
                 <header class="card-header">
                   <a href="#" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" class="">
@@ -235,6 +286,281 @@ export default {
   data() {
     return {
       smallGrid: true,
+      categoryTree: [
+        {
+          "id": 4,
+          "title": "Phones & Accessories",
+          "slug": "phones-accessories",
+          "child": [
+            {
+              "id": 31,
+              "title": "Smartphone",
+              "slug": "smartphone",
+              "child": [
+                  {
+                      "id": 5,
+                      "title": "Samsung",
+                      "slug": "samsung",
+                  },
+                  {
+                      "id": 33,
+                      "title": "Xiaomi",
+                      "slug": "xiaomi",
+                  },
+                  {
+                      "id": 34,
+                      "title": "Huawei",
+                      "slug": "huawei",
+                  },
+                  {
+                      "id": 35,
+                      "title": "OnePlus",
+                      "slug": "oneplus",
+                  },
+                  {
+                      "id": 36,
+                      "title": "Oppo",
+                      "slug": "oppo",
+                  },
+                  {
+                      "id": 37,
+                      "title": "Realme",
+                      "slug": "realme",
+                  },
+                  {
+                      "id": 38,
+                      "title": "Vivo",
+                      "slug": "vivo",
+                  },
+                  {
+                      "id": 40,
+                      "title": "Apple",
+                      "slug": "apple",
+                  },
+                  {
+                      "id": 54,
+                      "title": "Google",
+                      "slug": "google",
+                  },
+                  {
+                      "id": 55,
+                      "title": "Nokia",
+                      "slug": "nokia",
+                  },
+                  {
+                      "id": 56,
+                      "title": "Motorola",
+                      "slug": "motorola",
+                  },
+                  {
+                      "id": 57,
+                      "title": "Asus",
+                      "slug": "asus",
+                  },
+                  {
+                      "id": 58,
+                      "title": "LG",
+                      "slug": "lg",
+                  },
+                  {
+                      "id": 124,
+                      "title": "Honor",
+                      "slug": "honor",
+                  }
+              ]
+            },
+            {
+                "id": 32,
+                "title": "Accessories",
+                "slug": "accessories",
+            }
+          ]
+        },
+        {
+          "id": 121,
+          "title": "Motorcycle",
+          "slug": "motorcycle",
+          "child": [
+            {
+                "id": 122,
+                "title": "Motorbikes",
+                "slug": "motorbikes",
+            },
+            {
+                "id": 123,
+                "title": "Scooter",
+                "slug": "scooter",
+            },
+            {
+                "id": 126,
+                "title": "E-bikes",
+                "slug": "e-bikes",
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "title": "Automobiles",
+          "slug": "automobiles",
+          "child": [
+            {
+                "id": 107,
+                "title": "Sedan",
+                "slug": "sedan",
+            },
+            {
+                "id": 111,
+                "title": "SUV",
+                "slug": "suv",
+            },
+            {
+                "id": 131,
+                "title": "Hatchback",
+                "slug": "hatchback",
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "title": "Laptop",
+          "slug": "laptop",
+          "child": [
+            {
+                "id": 70,
+                "title": "Acer",
+                "slug": "acer",
+            },
+            {
+                "id": 71,
+                "title": "Asus Laptop",
+                "slug": "asus-laptop",
+            },
+            {
+                "id": 72,
+                "title": "Dell",
+                "slug": "dell",
+            },
+            {
+                "id": 73,
+                "title": "HP",
+                "slug": "hp",
+            },
+            {
+                "id": 74,
+                "title": "Lenovo",
+                "slug": "lenovo",
+            },
+            {
+                "id": 75,
+                "title": "Surface",
+                "slug": "surface",
+            },
+            {
+                "id": 76,
+                "title": "Razer",
+                "slug": "razer",
+            },
+            {
+                "id": 77,
+                "title": "MacBook",
+                "slug": "macbook",
+            },
+            {
+                "id": 146,
+                "title": "MSI",
+                "slug": "msi",
+            },
+            {
+                "id": 208,
+                "title": "iMac",
+                "slug": "imac",
+            },
+            {
+                "id": 209,
+                "title": "NEC",
+                "slug": "nec",
+            },
+            {
+                "id": 210,
+                "title": "Fujitsu",
+                "slug": "fujitsu",
+            },
+            {
+                "id": 213,
+                "title": "Panasonic",
+                "slug": "panasonic",
+            }
+          ]
+        },
+        {
+          "id": 79,
+          "title": "Repair & Servicing",
+          "slug": "repair-servicing",
+          "child": [
+              {
+                "id": 80,
+                "title": "Smartphone Servicing",
+                "slug": "smartphone-servicing",
+                "child": [
+                  {
+                      "id": 84,
+                      "title": "Smartphone LCD",
+                      "slug": "smartphone-lcd",
+                  },
+                  {
+                      "id": 85,
+                      "title": "Smartphone Motherboard",
+                      "slug": "smartphone-motherboard",
+                  },
+                  {
+                      "id": 94,
+                      "title": "Smartphone Battery",
+                      "slug": "smartphone-battery",
+                  }
+                ]
+              }
+          ]
+        },
+        {
+          "id": 155,
+          "title": "Furniture",
+          "slug": "furniture",
+          "child": [
+            {
+                "id": 156,
+                "title": "Bedroom",
+                "slug": "bedroom",
+            },
+            {
+                "id": 157,
+                "title": "Living Room",
+                "slug": "living-room",
+            },
+            {
+                "id": 158,
+                "title": "Dinning Room",
+                "slug": "dinning-room",
+            },
+            {
+                "id": 160,
+                "title": "Office",
+                "slug": "office",
+            }
+          ]
+        },
+        {
+          "id": 211,
+          "title": "Merchandise",
+          "slug": "merchandise",
+          "child": [
+            {
+                "id": 212,
+                "title": "Chattogram Challengers",
+                "slug": "chattogram-challengers",
+            }
+          ]
+        }
+      ]
     }
   },
   methods: {
