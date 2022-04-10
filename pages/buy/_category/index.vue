@@ -25,41 +25,11 @@
                 </header>
                 <div class="filter-content collapse show" id="collapse_1" style="">
                   <div class="card-body">
-                    <ul class="list-menu">
-                      <li>
-                        <!-- child category -->
-                        <a href="#" data-toggle="collapse" data-target="#collapse_child_1" aria-expanded="true" class="">
-                          <i class="icon-control fa fa-chevron-down"></i>
-                          Product type
-                        </a>
-                        <div class="filter-content collapse show ml-2" id="collapse_child_1" style="">
-                          <ul class="list-menu">
-                            <li>
-                              <!-- grand child category -->
-
-                              <!-- <a href="#" class="">
-                                Product type
-                              </a> -->
-                              <a href="#" data-toggle="collapse" data-target="#collapse_child_child_1" aria-expanded="true" class="">
-                                  <i class="icon-control fa fa-chevron-down"></i>
-                                  Product type
-                              </a>
-                              <div class="filter-content collapse show ml-2" id="collapse_child_child_1" style="">
-                                <ul class="list-menu">
-                                  <li>
-                                    <a href="#" class="">
-                                      Product type
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <!-- grand child category -->
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- child category -->
-                      </li>
-                    </ul>
+                    <TreeCategoryFilterMenu
+                      v-for="category in categoryTree"
+                      :key="category.id"
+                      :category="category"
+                    />
                   </div> <!-- card-body.// -->
                 </div>
               </article> <!-- filter-group  .// -->
@@ -280,8 +250,9 @@
 <script>
 import BuyProducLargetListGrid from '../../../components/buy/BuyProducLargetListGrid.vue'
 import BuyProductListGrid from '../../../components/buy/BuyProductListGrid.vue'
+import TreeCategoryFilterMenu from '../../../components/buy/TreeCategoryFilterMenu.vue'
 export default {
-  components: { BuyProductListGrid, BuyProducLargetListGrid },
+  components: { BuyProductListGrid, BuyProducLargetListGrid, TreeCategoryFilterMenu },
   layout: 'buy',
   data() {
     return {
