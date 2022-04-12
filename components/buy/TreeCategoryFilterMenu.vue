@@ -4,7 +4,7 @@
       <!-- child category -->
       <a href="#" data-toggle="collapse" :data-target="'#'+'collapse-'+category.slug+category.id" aria-expanded="true" class="">
         <i v-if="hasChildren" class="icon-control fa fa-chevron-down"></i>
-        {{category.title}}
+        <span :class="hasChildren ? 'font-weight-bold' : '' "  > {{category.title}} </span>
       </a>
       <div v-if="hasChildren" class="filter-content collapse show ml-2" :id="'collapse-'+category.slug+category.id" style="">
         <TreeCategoryFilterMenu
